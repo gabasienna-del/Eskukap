@@ -1,4 +1,4 @@
-name: Build LSPosed module
+name: Build LSPosed module (zip only)
 
 on:
   push:
@@ -6,38 +6,44 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-module:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Set up JDK
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: '21'
-
-      - name: Prepare module folder
+      - name: Prepare module directory
         run: |
+          rm -rf out
           mkdir -p out/module
-          cp -r smali out/module/ || true
-          cat > out/module/module.prop << 'E2'
+          # copy smali if present
+          if [ -d "smali" ]; then
+            cp -r smali out/module/ || true
+          fi
+          # create module.prop
+          cat > out/module/module.prop <<PROPMARK
 id=CamYan
 name=CamYan Hook
 version=1.0
 versionCode=1
 author=Gabit
 description=Hook module (ESKUKAP)
-E2
+PROPMARK
+          ls -la out/module || true
 
-      - name: Zip module
+      - name: Pack module ZIP
         run: |
+          SHA=$(git rev-parse --short HEAD)
+          ZIPNAME="CamYan-module-${SHA}.zip"
           cd out
-          zip -r CamYan-module.zip module
+          zip -r "../${ZIPNAME}" module
           cd ..
+          echo "Created: ${ZIPNAME}"
+          ls -la ${ZIPNAME} || true
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: CamYan-module
-          path: out/CamYan-module.zip
+          path: CamYan-module-*.zip
