@@ -8,19 +8,24 @@ public final class AntiDebug {
 
     public Result scan() {
         return new Result(
-                false, // debugger
-                false, // tracer
-                false, // tracerPid
-                false, // frida tcp
-                false, // frida tcp6
-                false, // frida unix
-                false, // maps
-                false  // xposed/frida class
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
         );
     }
 
     public void startWatchdog(long periodMs) {
-        // stub — логика может быть добавлена позже
+        // stub
+    }
+
+    public void enforceOrDie(String reason) {
+        // stub: в APK просто логика-заглушка
+        // в target-приложении реальная логика остаётся в smali
     }
 
     public static final class Result {
