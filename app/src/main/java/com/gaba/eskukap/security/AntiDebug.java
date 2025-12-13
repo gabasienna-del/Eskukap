@@ -1,48 +1,18 @@
 package com.gaba.eskukap.security;
 
+import android.util.Log;
+
 public final class AntiDebug {
 
     public static final AntiDebug INSTANCE = new AntiDebug();
 
     private AntiDebug() {}
 
-    public Result scan() {
-        return new Result(
-                false,
-                false,
-                false,
-                false,
-                false,
-                false,
-                false,
-                false
-        );
-    }
-
-    public void startWatchdog(long periodMs) {
-        // stub
-    }
-
-    public void enforceOrDie(String reason) {
-        // stub: в APK просто логика-заглушка
-        // в target-приложении реальная логика остаётся в smali
-    }
-
     public static final class Result {
-
         private final boolean suspicious;
 
-        public Result(
-                boolean a,
-                boolean b,
-                boolean c,
-                boolean d,
-                boolean e,
-                boolean f,
-                boolean g,
-                boolean h
-        ) {
-            this.suspicious = a || b || c || d || e || f || g || h;
+        public Result(boolean suspicious) {
+            this.suspicious = suspicious;
         }
 
         public boolean getSuspicious() {
@@ -51,7 +21,26 @@ public final class AntiDebug {
 
         @Override
         public String toString() {
-            return "AntiDebug.Result{suspicious=" + suspicious + "}";
+            return "Result(suspicious=" + suspicious + ")";
         }
+    }
+
+    public Result scan() {
+        boolean suspicious = false;
+
+        // Xposed / LSPosed (РАЗРЕШЕНО)
+        try {
+            Class.forName("de.robv.android.xposed.XposedBridge");
+            Log.i("AntiDebug", "Xposed detected (allowed)");
+            suspicious = true;
+        } catch (Throwable ignored) {}
+
+        // Frida
+        try {
+            Class.forName("re.frida.Server");
+            suspicious = true;
+        } catch (Throwable ignored) {}
+
+        return new Result(suspicious);
     }
 }
