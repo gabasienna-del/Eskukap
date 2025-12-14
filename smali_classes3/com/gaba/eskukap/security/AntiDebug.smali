@@ -2783,3 +2783,9 @@
     .line 60
     return-void
 .end method
+=======
+# вставляешь
+git add ...
+git commit
+git push.class public final Lcom/gaba/eskukap/security/AntiDebug;
+>>>>>>> c0f4fc3 (add AntiDebug and Result smali (restored))
