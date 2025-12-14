@@ -3,7 +3,6 @@
 .source "AntiDebug.kt"
 
 
-# annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/gaba/eskukap/security/AntiDebug$Result;
@@ -61,7 +60,6 @@
 .end annotation
 
 
-# static fields
 .field public static final INSTANCE:Lcom/gaba/eskukap/security/AntiDebug;
 
 .field private static final TAG:Ljava/lang/String; = "AntiDebug"
@@ -69,7 +67,6 @@
 .field private static final running:Ljava/util/concurrent/atomic/AtomicBoolean;
 
 
-# direct methods
 .method public static synthetic $r8$lambda$UkRtY6ruLUtpHK3FMQ1Ub8CrTy8(Ljava/lang/String;)V
     .locals 0
 
@@ -2461,7 +2458,6 @@
 .end method
 
 
-# virtual methods
 .method public final enforceOrDie(Ljava/lang/String;)V
     .locals 3
     .param p1, "reason"    # Ljava/lang/String;
@@ -2783,9 +2779,4 @@
     .line 60
     return-void
 .end method
-=======
-# вставляешь
-git add ...
-git commit
-git push.class public final Lcom/gaba/eskukap/security/AntiDebug;
->>>>>>> c0f4fc3 (add AntiDebug and Result smali (restored))
+.end class
