@@ -1,4 +1,6 @@
-name: Build LSPosed APK
+git add .
+git commit -m "add build workflow"
+git pushname: Build LSPosed APK
 
 on:
   push:
