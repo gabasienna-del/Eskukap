@@ -1,9 +1,8 @@
-name: Build APK
+name: Build LSPosed APK
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
@@ -11,25 +10,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Java
-        uses: actions/setup-java@v4
+      - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 17
 
-      - name: Download apktool
-        run: |
-          wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.9.3.jar -O apktool.jar
+      - name: Install apktool
+        run: sudo apt update && sudo apt install -y apktool
 
       - name: Build APK
-        run: |
-          java -jar apktool.jar b . -o Eskukap_fixed.apk
+        run: apktool b . -r -o Eskukap_LSPosed.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: Eskukap_fixed
-          path: Eskukap_fixed.apk
+          name: Eskukap_LSPosed
+          path: Eskukap_LSPosed.apk

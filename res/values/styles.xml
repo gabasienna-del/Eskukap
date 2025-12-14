@@ -1,10 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Minimal dummy styles to satisfy aapt -->
-    <style name="AppTheme" />
-    <style name="Theme.AppCompat" />
-    <style name="Theme.AppCompat.Light" />
-    <style name="Theme.AppCompat.Dialog" />
-    <style name="Theme.Material3" />
-    <style name="Theme.Material3.Light" />
-</resources>
+<resources/>
