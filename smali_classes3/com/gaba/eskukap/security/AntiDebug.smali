@@ -135,7 +135,7 @@
 
     move v0, v1
 
-    .end local v0    # "_":Ljava/lang/Throwable;
+.end local v0    # "_":Ljava/lang/Throwable;
     :goto_0
     return v0
 .end method
@@ -286,7 +286,7 @@
     .local v17, "$i$f$any":I
     move-object/from16 v1, v18
 
-    .end local v18    # "$this$any$iv":Ljava/lang/Iterable;
+.end local v18    # "$this$any$iv":Ljava/lang/Iterable;
     .local v1, "$this$any$iv":Ljava/lang/Iterable;
     instance-of v14, v1, Ljava/util/Collection;
     :try_end_1
@@ -322,17 +322,17 @@
     goto/16 :goto_3
 
     .line 177
-    .end local v0    # "it$iv":Ljava/io/BufferedReader;
-    .end local v1    # "$this$any$iv":Ljava/lang/Iterable;
-    .end local v7    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
-    .end local v8    # "seq":Lkotlin/sequences/Sequence;
-    .end local v9    # "$i$a$-useLines$default-AntiDebug$hasFridaTcp$1":I
-    .end local v10    # "$this$any$iv":Lkotlin/sequences/Sequence;
-    .end local v11    # "$i$f$any":I
-    .end local v13    # "element$iv":Ljava/lang/Object;
-    .end local v15    # "line":Ljava/lang/String;
-    .end local v16    # "$i$a$-any-AntiDebug$hasFridaTcp$1$1":I
-    .end local v17    # "$i$f$any":I
+.end local v0    # "it$iv":Ljava/io/BufferedReader;
+.end local v1    # "$this$any$iv":Ljava/lang/Iterable;
+.end local v7    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
+.end local v8    # "seq":Lkotlin/sequences/Sequence;
+.end local v9    # "$i$a$-useLines$default-AntiDebug$hasFridaTcp$1":I
+.end local v10    # "$this$any$iv":Lkotlin/sequences/Sequence;
+.end local v11    # "$i$f$any":I
+.end local v13    # "element$iv":Ljava/lang/Object;
+.end local v15    # "line":Ljava/lang/String;
+.end local v16    # "$i$a$-any-AntiDebug$hasFridaTcp$1$1":I
+.end local v17    # "$i$f$any":I
     :catchall_0
     move-exception v0
 
@@ -391,7 +391,7 @@
 
     move-object/from16 v25, v0
 
-    .end local v0    # "it$iv":Ljava/io/BufferedReader;
+.end local v0    # "it$iv":Ljava/io/BufferedReader;
     .local v25, "it$iv":Ljava/io/BufferedReader;
     invoke-static/range {v24 .. v24}, Lkotlin/text/CharsKt;->checkRadix(I)I
 
@@ -401,7 +401,7 @@
 
     move/from16 v1, v22
 
-    .end local v22    # "p":I
+.end local v22    # "p":I
     .local v1, "p":I
     .local v24, "$this$any$iv":Ljava/lang/Iterable;
     invoke-static {v1, v0}, Ljava/lang/Integer;->toString(II)Ljava/lang/String;
@@ -410,7 +410,7 @@
 
     move/from16 v22, v1
 
-    .end local v1    # "p":I
+.end local v1    # "p":I
     .restart local v22    # "p":I
     const-string v1, "toString(...)"
 
@@ -448,7 +448,7 @@
 
     move-object/from16 v26, v3
 
-    .end local v3    # "$this$useLines_u24default$iv":Ljava/io/File;
+.end local v3    # "$this$useLines_u24default$iv":Ljava/io/File;
     .local v26, "$this$useLines_u24default$iv":Ljava/io/File;
     :try_start_4
     const-string v3, ":"
@@ -479,8 +479,8 @@
 
     const/4 v4, 0x0
 
-    .end local v0    # "hex":Ljava/lang/String;
-    .end local v4    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v0    # "hex":Ljava/lang/String;
+.end local v4    # "charset$iv":Ljava/nio/charset/Charset;
     .local v19, "charset$iv":Ljava/nio/charset/Charset;
     .local v27, "hex":Ljava/lang/String;
     :try_start_5
@@ -491,9 +491,9 @@
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
     .line 181
-    .end local v22    # "p":I
-    .end local v23    # "$i$a$-any-AntiDebug$hasFridaTcp$1$1$1":I
-    .end local v27    # "hex":Ljava/lang/String;
+.end local v22    # "p":I
+.end local v23    # "$i$a$-any-AntiDebug$hasFridaTcp$1$1$1":I
+.end local v27    # "hex":Ljava/lang/String;
     if-eqz v1, :cond_2
 
     move/from16 v0, v20
@@ -514,18 +514,18 @@
     goto :goto_2
 
     .line 177
-    .end local v7    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
-    .end local v8    # "seq":Lkotlin/sequences/Sequence;
-    .end local v9    # "$i$a$-useLines$default-AntiDebug$hasFridaTcp$1":I
-    .end local v10    # "$this$any$iv":Lkotlin/sequences/Sequence;
-    .end local v11    # "$i$f$any":I
-    .end local v13    # "element$iv":Ljava/lang/Object;
-    .end local v15    # "line":Ljava/lang/String;
-    .end local v16    # "$i$a$-any-AntiDebug$hasFridaTcp$1$1":I
-    .end local v17    # "$i$f$any":I
-    .end local v21    # "element$iv":I
-    .end local v24    # "$this$any$iv":Ljava/lang/Iterable;
-    .end local v25    # "it$iv":Ljava/io/BufferedReader;
+.end local v7    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
+.end local v8    # "seq":Lkotlin/sequences/Sequence;
+.end local v9    # "$i$a$-useLines$default-AntiDebug$hasFridaTcp$1":I
+.end local v10    # "$this$any$iv":Lkotlin/sequences/Sequence;
+.end local v11    # "$i$f$any":I
+.end local v13    # "element$iv":Ljava/lang/Object;
+.end local v15    # "line":Ljava/lang/String;
+.end local v16    # "$i$a$-any-AntiDebug$hasFridaTcp$1$1":I
+.end local v17    # "$i$f$any":I
+.end local v21    # "element$iv":I
+.end local v24    # "$this$any$iv":Ljava/lang/Iterable;
+.end local v25    # "it$iv":Ljava/io/BufferedReader;
     :catchall_1
     move-exception v0
 
@@ -533,7 +533,7 @@
 
     goto :goto_5
 
-    .end local v19    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v19    # "charset$iv":Ljava/nio/charset/Charset;
     .restart local v4    # "charset$iv":Ljava/nio/charset/Charset;
     :catchall_2
     move-exception v0
@@ -544,13 +544,13 @@
 
     move-object v1, v0
 
-    .end local v4    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v4    # "charset$iv":Ljava/nio/charset/Charset;
     .restart local v19    # "charset$iv":Ljava/nio/charset/Charset;
     goto :goto_5
 
     .line 182
-    .end local v19    # "charset$iv":Ljava/nio/charset/Charset;
-    .end local v26    # "$this$useLines_u24default$iv":Ljava/io/File;
+.end local v19    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v26    # "$this$useLines_u24default$iv":Ljava/io/File;
     .local v0, "it$iv":Ljava/io/BufferedReader;
     .local v1, "$this$any$iv":Ljava/lang/Iterable;
     .restart local v3    # "$this$useLines_u24default$iv":Ljava/io/File;
@@ -575,10 +575,10 @@
 
     const/4 v4, 0x0
 
-    .end local v0    # "it$iv":Ljava/io/BufferedReader;
-    .end local v1    # "$this$any$iv":Ljava/lang/Iterable;
-    .end local v3    # "$this$useLines_u24default$iv":Ljava/io/File;
-    .end local v4    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v0    # "it$iv":Ljava/io/BufferedReader;
+.end local v1    # "$this$any$iv":Ljava/lang/Iterable;
+.end local v3    # "$this$useLines_u24default$iv":Ljava/io/File;
+.end local v4    # "charset$iv":Ljava/nio/charset/Charset;
     .restart local v19    # "charset$iv":Ljava/nio/charset/Charset;
     .restart local v24    # "$this$any$iv":Ljava/lang/Iterable;
     .restart local v25    # "it$iv":Ljava/io/BufferedReader;
@@ -586,14 +586,14 @@
     move v0, v4
 
     .line 110
-    .end local v17    # "$i$f$any":I
-    .end local v24    # "$this$any$iv":Ljava/lang/Iterable;
+.end local v17    # "$i$f$any":I
+.end local v24    # "$this$any$iv":Ljava/lang/Iterable;
     :goto_3
     nop
 
     .line 179
-    .end local v15    # "line":Ljava/lang/String;
-    .end local v16    # "$i$a$-any-AntiDebug$hasFridaTcp$1$1":I
+.end local v15    # "line":Ljava/lang/String;
+.end local v16    # "$i$a$-any-AntiDebug$hasFridaTcp$1$1":I
     if-eqz v0, :cond_4
 
     goto :goto_4
@@ -610,10 +610,10 @@
     goto/16 :goto_1
 
     .line 183
-    .end local v13    # "element$iv":Ljava/lang/Object;
-    .end local v19    # "charset$iv":Ljava/nio/charset/Charset;
-    .end local v25    # "it$iv":Ljava/io/BufferedReader;
-    .end local v26    # "$this$useLines_u24default$iv":Ljava/io/File;
+.end local v13    # "element$iv":Ljava/lang/Object;
+.end local v19    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v25    # "it$iv":Ljava/io/BufferedReader;
+.end local v26    # "$this$useLines_u24default$iv":Ljava/io/File;
     .restart local v0    # "it$iv":Ljava/io/BufferedReader;
     .restart local v3    # "$this$useLines_u24default$iv":Ljava/io/File;
     .restart local v4    # "charset$iv":Ljava/nio/charset/Charset;
@@ -626,25 +626,25 @@
 
     const/4 v4, 0x0
 
-    .end local v0    # "it$iv":Ljava/io/BufferedReader;
-    .end local v3    # "$this$useLines_u24default$iv":Ljava/io/File;
-    .end local v4    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v0    # "it$iv":Ljava/io/BufferedReader;
+.end local v3    # "$this$useLines_u24default$iv":Ljava/io/File;
+.end local v4    # "charset$iv":Ljava/nio/charset/Charset;
     .restart local v19    # "charset$iv":Ljava/nio/charset/Charset;
     .restart local v25    # "it$iv":Ljava/io/BufferedReader;
     .restart local v26    # "$this$useLines_u24default$iv":Ljava/io/File;
     move/from16 v20, v4
 
     .line 108
-    .end local v10    # "$this$any$iv":Lkotlin/sequences/Sequence;
-    .end local v11    # "$i$f$any":I
+.end local v10    # "$this$any$iv":Lkotlin/sequences/Sequence;
+.end local v11    # "$i$f$any":I
     :goto_4
     nop
 
     .line 177
-    .end local v7    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
-    .end local v8    # "seq":Lkotlin/sequences/Sequence;
-    .end local v9    # "$i$a$-useLines$default-AntiDebug$hasFridaTcp$1":I
-    .end local v25    # "it$iv":Ljava/io/BufferedReader;
+.end local v7    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
+.end local v8    # "seq":Lkotlin/sequences/Sequence;
+.end local v9    # "$i$a$-useLines$default-AntiDebug$hasFridaTcp$1":I
+.end local v25    # "it$iv":Ljava/io/BufferedReader;
     const/4 v0, 0x0
 
     :try_start_6
@@ -654,9 +654,9 @@
 
     move/from16 v1, v20
 
-    .end local v5    # "$i$f$useLines":I
-    .end local v19    # "charset$iv":Ljava/nio/charset/Charset;
-    .end local v26    # "$this$useLines_u24default$iv":Ljava/io/File;
+.end local v5    # "$i$f$useLines":I
+.end local v19    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v26    # "$this$useLines_u24default$iv":Ljava/io/File;
     goto :goto_7
 
     .restart local v3    # "$this$useLines_u24default$iv":Ljava/io/File;
@@ -673,11 +673,11 @@
 
     move-object v1, v0
 
-    .end local v3    # "$this$useLines_u24default$iv":Ljava/io/File;
-    .end local v4    # "charset$iv":Ljava/nio/charset/Charset;
-    .end local v5    # "$i$f$useLines":I
-    .end local p1    # "ports":Lkotlin/ranges/IntRange;
-    .end local p2    # "file":Ljava/lang/String;
+.end local v3    # "$this$useLines_u24default$iv":Ljava/io/File;
+.end local v4    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v5    # "$i$f$useLines":I
+.end local p1    # "ports":Lkotlin/ranges/IntRange;
+.end local p2    # "file":Ljava/lang/String;
     :goto_5
     :try_start_7
     throw v1
@@ -697,16 +697,16 @@
     :try_start_8
     invoke-static {v6, v1}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
-    .end local p1    # "ports":Lkotlin/ranges/IntRange;
-    .end local p2    # "file":Ljava/lang/String;
+.end local p1    # "ports":Lkotlin/ranges/IntRange;
+.end local p2    # "file":Ljava/lang/String;
     throw v2
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_5
 
     .line 116
-    .end local v5    # "$i$f$useLines":I
-    .end local v19    # "charset$iv":Ljava/nio/charset/Charset;
-    .end local v26    # "$this$useLines_u24default$iv":Ljava/io/File;
+.end local v5    # "$i$f$useLines":I
+.end local v19    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v26    # "$this$useLines_u24default$iv":Ljava/io/File;
     .restart local p1    # "ports":Lkotlin/ranges/IntRange;
     .restart local p2    # "file":Ljava/lang/String;
     :catchall_5
@@ -820,9 +820,9 @@
     goto :goto_0
 
     .line 129
-    .end local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
-    .end local v6    # "charset$iv":Ljava/nio/charset/Charset;
-    .end local v7    # "$i$f$useLines":I
+.end local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
+.end local v6    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v7    # "$i$f$useLines":I
     :catchall_0
     move-exception v0
 
@@ -914,7 +914,7 @@
 
     move-object/from16 v3, v18
 
-    .end local v18    # "line":Ljava/lang/String;
+.end local v18    # "line":Ljava/lang/String;
     .local v3, "line":Ljava/lang/String;
     invoke-virtual {v3, v2}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
 
@@ -937,7 +937,7 @@
     .local v20, "$i$f$any":I
     move-object/from16 v21, v0
 
-    .end local v0    # "it$iv":Ljava/io/BufferedReader;
+.end local v0    # "it$iv":Ljava/io/BufferedReader;
     .local v21, "it$iv":Ljava/io/BufferedReader;
     instance-of v0, v4, Ljava/util/Collection;
     :try_end_4
@@ -973,18 +973,18 @@
     goto :goto_3
 
     .line 185
-    .end local v2    # "s":Ljava/lang/String;
-    .end local v3    # "line":Ljava/lang/String;
-    .end local v4    # "$this$any$iv":Ljava/lang/Iterable;
-    .end local v9    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
-    .end local v10    # "seq":Lkotlin/sequences/Sequence;
-    .end local v11    # "$i$a$-useLines$default-AntiDebug$hasFridaUnixSockets$1":I
-    .end local v12    # "$this$any$iv":Lkotlin/sequences/Sequence;
-    .end local v13    # "$i$f$any":I
-    .end local v15    # "element$iv":Ljava/lang/Object;
-    .end local v17    # "$i$a$-any-AntiDebug$hasFridaUnixSockets$1$1":I
-    .end local v20    # "$i$f$any":I
-    .end local v21    # "it$iv":Ljava/io/BufferedReader;
+.end local v2    # "s":Ljava/lang/String;
+.end local v3    # "line":Ljava/lang/String;
+.end local v4    # "$this$any$iv":Ljava/lang/Iterable;
+.end local v9    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
+.end local v10    # "seq":Lkotlin/sequences/Sequence;
+.end local v11    # "$i$a$-useLines$default-AntiDebug$hasFridaUnixSockets$1":I
+.end local v12    # "$this$any$iv":Lkotlin/sequences/Sequence;
+.end local v13    # "$i$f$any":I
+.end local v15    # "element$iv":Ljava/lang/Object;
+.end local v17    # "$i$a$-any-AntiDebug$hasFridaUnixSockets$1$1":I
+.end local v20    # "$i$f$any":I
+.end local v21    # "it$iv":Ljava/io/BufferedReader;
     :catchall_1
     move-exception v0
 
@@ -1046,7 +1046,7 @@
 
     move-object/from16 v26, v1
 
-    .end local v1    # "needles":Ljava/util/List;
+.end local v1    # "needles":Ljava/util/List;
     .local v26, "needles":Ljava/util/List;
     :try_start_7
     move-object/from16 v1, v23
@@ -1067,9 +1067,9 @@
 
     const/4 v4, 0x2
 
-    .end local v2    # "s":Ljava/lang/String;
-    .end local v3    # "line":Ljava/lang/String;
-    .end local v4    # "$this$any$iv":Ljava/lang/Iterable;
+.end local v2    # "s":Ljava/lang/String;
+.end local v3    # "line":Ljava/lang/String;
+.end local v4    # "$this$any$iv":Ljava/lang/Iterable;
     .restart local v18    # "line":Ljava/lang/String;
     .local v19, "$this$any$iv":Ljava/lang/Iterable;
     .local v27, "s":Ljava/lang/String;
@@ -1081,8 +1081,8 @@
     .catchall {:try_start_8 .. :try_end_8} :catchall_2
 
     .line 189
-    .end local v23    # "key":Ljava/lang/String;
-    .end local v24    # "$i$a$-any-AntiDebug$hasFridaUnixSockets$1$1$1":I
+.end local v23    # "key":Ljava/lang/String;
+.end local v24    # "$i$a$-any-AntiDebug$hasFridaUnixSockets$1$1$1":I
     if-eqz v0, :cond_2
 
     const/16 v19, 0x1
@@ -1103,19 +1103,19 @@
     goto :goto_2
 
     .line 185
-    .end local v9    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
-    .end local v10    # "seq":Lkotlin/sequences/Sequence;
-    .end local v11    # "$i$a$-useLines$default-AntiDebug$hasFridaUnixSockets$1":I
-    .end local v12    # "$this$any$iv":Lkotlin/sequences/Sequence;
-    .end local v13    # "$i$f$any":I
-    .end local v15    # "element$iv":Ljava/lang/Object;
-    .end local v17    # "$i$a$-any-AntiDebug$hasFridaUnixSockets$1$1":I
-    .end local v18    # "line":Ljava/lang/String;
-    .end local v19    # "$this$any$iv":Ljava/lang/Iterable;
-    .end local v20    # "$i$f$any":I
-    .end local v21    # "it$iv":Ljava/io/BufferedReader;
-    .end local v22    # "element$iv":Ljava/lang/Object;
-    .end local v27    # "s":Ljava/lang/String;
+.end local v9    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
+.end local v10    # "seq":Lkotlin/sequences/Sequence;
+.end local v11    # "$i$a$-useLines$default-AntiDebug$hasFridaUnixSockets$1":I
+.end local v12    # "$this$any$iv":Lkotlin/sequences/Sequence;
+.end local v13    # "$i$f$any":I
+.end local v15    # "element$iv":Ljava/lang/Object;
+.end local v17    # "$i$a$-any-AntiDebug$hasFridaUnixSockets$1$1":I
+.end local v18    # "line":Ljava/lang/String;
+.end local v19    # "$this$any$iv":Ljava/lang/Iterable;
+.end local v20    # "$i$f$any":I
+.end local v21    # "it$iv":Ljava/io/BufferedReader;
+.end local v22    # "element$iv":Ljava/lang/Object;
+.end local v27    # "s":Ljava/lang/String;
     :catchall_2
     move-exception v0
 
@@ -1133,7 +1133,7 @@
     goto :goto_6
 
     .line 190
-    .end local v26    # "needles":Ljava/util/List;
+.end local v26    # "needles":Ljava/util/List;
     .restart local v1    # "needles":Ljava/util/List;
     .restart local v2    # "s":Ljava/lang/String;
     .restart local v3    # "line":Ljava/lang/String;
@@ -1160,10 +1160,10 @@
 
     const/4 v4, 0x2
 
-    .end local v1    # "needles":Ljava/util/List;
-    .end local v2    # "s":Ljava/lang/String;
-    .end local v3    # "line":Ljava/lang/String;
-    .end local v4    # "$this$any$iv":Ljava/lang/Iterable;
+.end local v1    # "needles":Ljava/util/List;
+.end local v2    # "s":Ljava/lang/String;
+.end local v3    # "line":Ljava/lang/String;
+.end local v4    # "$this$any$iv":Ljava/lang/Iterable;
     .restart local v18    # "line":Ljava/lang/String;
     .restart local v19    # "$this$any$iv":Ljava/lang/Iterable;
     .restart local v26    # "needles":Ljava/util/List;
@@ -1171,15 +1171,15 @@
     move/from16 v19, v3
 
     .line 126
-    .end local v19    # "$this$any$iv":Ljava/lang/Iterable;
-    .end local v20    # "$i$f$any":I
+.end local v19    # "$this$any$iv":Ljava/lang/Iterable;
+.end local v20    # "$i$f$any":I
     :goto_3
     nop
 
     .line 187
-    .end local v17    # "$i$a$-any-AntiDebug$hasFridaUnixSockets$1$1":I
-    .end local v18    # "line":Ljava/lang/String;
-    .end local v27    # "s":Ljava/lang/String;
+.end local v17    # "$i$a$-any-AntiDebug$hasFridaUnixSockets$1$1":I
+.end local v18    # "line":Ljava/lang/String;
+.end local v27    # "s":Ljava/lang/String;
     if-eqz v19, :cond_4
 
     const/16 v16, 0x1
@@ -1198,14 +1198,14 @@
     goto/16 :goto_1
 
     .line 185
-    .end local v9    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
-    .end local v10    # "seq":Lkotlin/sequences/Sequence;
-    .end local v11    # "$i$a$-useLines$default-AntiDebug$hasFridaUnixSockets$1":I
-    .end local v12    # "$this$any$iv":Lkotlin/sequences/Sequence;
-    .end local v13    # "$i$f$any":I
-    .end local v15    # "element$iv":Ljava/lang/Object;
-    .end local v21    # "it$iv":Ljava/io/BufferedReader;
-    .end local v26    # "needles":Ljava/util/List;
+.end local v9    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
+.end local v10    # "seq":Lkotlin/sequences/Sequence;
+.end local v11    # "$i$a$-useLines$default-AntiDebug$hasFridaUnixSockets$1":I
+.end local v12    # "$this$any$iv":Lkotlin/sequences/Sequence;
+.end local v13    # "$i$f$any":I
+.end local v15    # "element$iv":Ljava/lang/Object;
+.end local v21    # "it$iv":Ljava/io/BufferedReader;
+.end local v26    # "needles":Ljava/util/List;
     .restart local v1    # "needles":Ljava/util/List;
     :catchall_4
     move-exception v0
@@ -1230,23 +1230,23 @@
 
     move v3, v2
 
-    .end local v0    # "it$iv":Ljava/io/BufferedReader;
-    .end local v1    # "needles":Ljava/util/List;
+.end local v0    # "it$iv":Ljava/io/BufferedReader;
+.end local v1    # "needles":Ljava/util/List;
     .restart local v21    # "it$iv":Ljava/io/BufferedReader;
     .restart local v26    # "needles":Ljava/util/List;
     move/from16 v16, v3
 
     .line 124
-    .end local v12    # "$this$any$iv":Lkotlin/sequences/Sequence;
-    .end local v13    # "$i$f$any":I
+.end local v12    # "$this$any$iv":Lkotlin/sequences/Sequence;
+.end local v13    # "$i$f$any":I
     :goto_4
     nop
 
     .line 185
-    .end local v9    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
-    .end local v10    # "seq":Lkotlin/sequences/Sequence;
-    .end local v11    # "$i$a$-useLines$default-AntiDebug$hasFridaUnixSockets$1":I
-    .end local v21    # "it$iv":Ljava/io/BufferedReader;
+.end local v9    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
+.end local v10    # "seq":Lkotlin/sequences/Sequence;
+.end local v11    # "$i$a$-useLines$default-AntiDebug$hasFridaUnixSockets$1":I
+.end local v21    # "it$iv":Ljava/io/BufferedReader;
     const/4 v0, 0x0
 
     :try_start_9
@@ -1256,12 +1256,12 @@
 
     move/from16 v2, v16
 
-    .end local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
-    .end local v6    # "charset$iv":Ljava/nio/charset/Charset;
-    .end local v7    # "$i$f$useLines":I
+.end local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
+.end local v6    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v7    # "$i$f$useLines":I
     goto :goto_8
 
-    .end local v26    # "needles":Ljava/util/List;
+.end local v26    # "needles":Ljava/util/List;
     .restart local v1    # "needles":Ljava/util/List;
     .restart local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
     .restart local v6    # "charset$iv":Ljava/nio/charset/Charset;
@@ -1276,10 +1276,10 @@
     :goto_5
     move-object v1, v0
 
-    .end local v1    # "needles":Ljava/util/List;
-    .end local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
-    .end local v6    # "charset$iv":Ljava/nio/charset/Charset;
-    .end local v7    # "$i$f$useLines":I
+.end local v1    # "needles":Ljava/util/List;
+.end local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
+.end local v6    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v7    # "$i$f$useLines":I
     :goto_6
     :try_start_a
     throw v1
@@ -1298,22 +1298,22 @@
     :try_start_b
     invoke-static {v8, v1}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
-    .end local v26    # "needles":Ljava/util/List;
+.end local v26    # "needles":Ljava/util/List;
     throw v2
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_7
 
     .line 129
-    .end local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
-    .end local v6    # "charset$iv":Ljava/nio/charset/Charset;
-    .end local v7    # "$i$f$useLines":I
+.end local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
+.end local v6    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v7    # "$i$f$useLines":I
     .restart local v26    # "needles":Ljava/util/List;
     :catchall_7
     move-exception v0
 
     goto :goto_7
 
-    .end local v26    # "needles":Ljava/util/List;
+.end local v26    # "needles":Ljava/util/List;
     .restart local v1    # "needles":Ljava/util/List;
     :catchall_8
     move-exception v0
@@ -1322,7 +1322,7 @@
 
     move v3, v2
 
-    .end local v1    # "needles":Ljava/util/List;
+.end local v1    # "needles":Ljava/util/List;
     .restart local v26    # "needles":Ljava/util/List;
     :goto_7
     move v2, v3
@@ -1409,8 +1409,8 @@
     return v2
 
     .line 82
-    .end local v5    # "t":Ljava/io/File;
-    .end local v6    # "path":Ljava/lang/String;
+.end local v5    # "t":Ljava/io/File;
+.end local v6    # "path":Ljava/lang/String;
     :cond_1
     add-int/lit8 v4, v4, 0x1
 
@@ -1477,8 +1477,8 @@
     .local v8, "$i$a$-also-AntiDebug$hasTracerPid$1$1":I
     iput-object v7, v5, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .end local v7    # "it":Ljava/lang/String;
-    .end local v8    # "$i$a$-also-AntiDebug$hasTracerPid$1$1":I
+.end local v7    # "it":Ljava/lang/String;
+.end local v8    # "$i$a$-also-AntiDebug$hasTracerPid$1$1":I
     const/4 v7, 0x0
 
     if-eqz v6, :cond_1
@@ -1529,10 +1529,10 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .end local v0    # "v":Ljava/lang/String;
-    .end local v3    # "br":Ljava/io/BufferedReader;
-    .end local v4    # "$i$a$-use-AntiDebug$hasTracerPid$1":I
-    .end local v5    # "line":Lkotlin/jvm/internal/Ref$ObjectRef;
+.end local v0    # "v":Ljava/lang/String;
+.end local v3    # "br":Ljava/io/BufferedReader;
+.end local v4    # "$i$a$-use-AntiDebug$hasTracerPid$1":I
+.end local v5    # "line":Lkotlin/jvm/internal/Ref$ObjectRef;
     xor-int/lit8 v0, v6, 0x1
 
     :try_start_2
@@ -1548,9 +1548,9 @@
     nop
 
     .line 91
-    .end local v3    # "br":Ljava/io/BufferedReader;
-    .end local v4    # "$i$a$-use-AntiDebug$hasTracerPid$1":I
-    .end local v5    # "line":Lkotlin/jvm/internal/Ref$ObjectRef;
+.end local v3    # "br":Ljava/io/BufferedReader;
+.end local v4    # "$i$a$-use-AntiDebug$hasTracerPid$1":I
+.end local v5    # "line":Lkotlin/jvm/internal/Ref$ObjectRef;
     invoke-static {v2, v7}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
@@ -1560,7 +1560,7 @@
     :catchall_0
     move-exception v0
 
-    .end local p1    # "statusPath":Ljava/lang/String;
+.end local p1    # "statusPath":Ljava/lang/String;
     :try_start_3
     throw v0
     :try_end_3
@@ -1573,7 +1573,7 @@
     :try_start_4
     invoke-static {v2, v0}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
-    .end local p1    # "statusPath":Ljava/lang/String;
+.end local p1    # "statusPath":Ljava/lang/String;
     throw v3
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
@@ -1832,9 +1832,9 @@
     goto :goto_0
 
     .line 142
-    .end local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
-    .end local v6    # "charset$iv":Ljava/nio/charset/Charset;
-    .end local v7    # "$i$f$useLines":I
+.end local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
+.end local v6    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v7    # "$i$f$useLines":I
     :catchall_0
     move-exception v0
 
@@ -1926,7 +1926,7 @@
 
     move-object/from16 v3, v18
 
-    .end local v18    # "line":Ljava/lang/String;
+.end local v18    # "line":Ljava/lang/String;
     .local v3, "line":Ljava/lang/String;
     invoke-virtual {v3, v2}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
 
@@ -1949,7 +1949,7 @@
     .local v20, "$i$f$any":I
     move-object/from16 v21, v0
 
-    .end local v0    # "it$iv":Ljava/io/BufferedReader;
+.end local v0    # "it$iv":Ljava/io/BufferedReader;
     .local v21, "it$iv":Ljava/io/BufferedReader;
     instance-of v0, v4, Ljava/util/Collection;
     :try_end_4
@@ -1985,18 +1985,18 @@
     goto :goto_3
 
     .line 193
-    .end local v2    # "s":Ljava/lang/String;
-    .end local v3    # "line":Ljava/lang/String;
-    .end local v4    # "$this$any$iv":Ljava/lang/Iterable;
-    .end local v9    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
-    .end local v10    # "seq":Lkotlin/sequences/Sequence;
-    .end local v11    # "$i$a$-useLines$default-AntiDebug$mapsContainFrida$1":I
-    .end local v12    # "$this$any$iv":Lkotlin/sequences/Sequence;
-    .end local v13    # "$i$f$any":I
-    .end local v15    # "element$iv":Ljava/lang/Object;
-    .end local v17    # "$i$a$-any-AntiDebug$mapsContainFrida$1$1":I
-    .end local v20    # "$i$f$any":I
-    .end local v21    # "it$iv":Ljava/io/BufferedReader;
+.end local v2    # "s":Ljava/lang/String;
+.end local v3    # "line":Ljava/lang/String;
+.end local v4    # "$this$any$iv":Ljava/lang/Iterable;
+.end local v9    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
+.end local v10    # "seq":Lkotlin/sequences/Sequence;
+.end local v11    # "$i$a$-useLines$default-AntiDebug$mapsContainFrida$1":I
+.end local v12    # "$this$any$iv":Lkotlin/sequences/Sequence;
+.end local v13    # "$i$f$any":I
+.end local v15    # "element$iv":Ljava/lang/Object;
+.end local v17    # "$i$a$-any-AntiDebug$mapsContainFrida$1$1":I
+.end local v20    # "$i$f$any":I
+.end local v21    # "it$iv":Ljava/io/BufferedReader;
     :catchall_1
     move-exception v0
 
@@ -2058,7 +2058,7 @@
 
     move-object/from16 v26, v1
 
-    .end local v1    # "needles":Ljava/util/List;
+.end local v1    # "needles":Ljava/util/List;
     .local v26, "needles":Ljava/util/List;
     :try_start_7
     move-object/from16 v1, v23
@@ -2079,9 +2079,9 @@
 
     const/4 v4, 0x2
 
-    .end local v2    # "s":Ljava/lang/String;
-    .end local v3    # "line":Ljava/lang/String;
-    .end local v4    # "$this$any$iv":Ljava/lang/Iterable;
+.end local v2    # "s":Ljava/lang/String;
+.end local v3    # "line":Ljava/lang/String;
+.end local v4    # "$this$any$iv":Ljava/lang/Iterable;
     .restart local v18    # "line":Ljava/lang/String;
     .local v19, "$this$any$iv":Ljava/lang/Iterable;
     .local v27, "s":Ljava/lang/String;
@@ -2093,8 +2093,8 @@
     .catchall {:try_start_8 .. :try_end_8} :catchall_2
 
     .line 197
-    .end local v23    # "it":Ljava/lang/String;
-    .end local v24    # "$i$a$-any-AntiDebug$mapsContainFrida$1$1$1":I
+.end local v23    # "it":Ljava/lang/String;
+.end local v24    # "$i$a$-any-AntiDebug$mapsContainFrida$1$1$1":I
     if-eqz v0, :cond_2
 
     const/16 v19, 0x1
@@ -2115,19 +2115,19 @@
     goto :goto_2
 
     .line 193
-    .end local v9    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
-    .end local v10    # "seq":Lkotlin/sequences/Sequence;
-    .end local v11    # "$i$a$-useLines$default-AntiDebug$mapsContainFrida$1":I
-    .end local v12    # "$this$any$iv":Lkotlin/sequences/Sequence;
-    .end local v13    # "$i$f$any":I
-    .end local v15    # "element$iv":Ljava/lang/Object;
-    .end local v17    # "$i$a$-any-AntiDebug$mapsContainFrida$1$1":I
-    .end local v18    # "line":Ljava/lang/String;
-    .end local v19    # "$this$any$iv":Ljava/lang/Iterable;
-    .end local v20    # "$i$f$any":I
-    .end local v21    # "it$iv":Ljava/io/BufferedReader;
-    .end local v22    # "element$iv":Ljava/lang/Object;
-    .end local v27    # "s":Ljava/lang/String;
+.end local v9    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
+.end local v10    # "seq":Lkotlin/sequences/Sequence;
+.end local v11    # "$i$a$-useLines$default-AntiDebug$mapsContainFrida$1":I
+.end local v12    # "$this$any$iv":Lkotlin/sequences/Sequence;
+.end local v13    # "$i$f$any":I
+.end local v15    # "element$iv":Ljava/lang/Object;
+.end local v17    # "$i$a$-any-AntiDebug$mapsContainFrida$1$1":I
+.end local v18    # "line":Ljava/lang/String;
+.end local v19    # "$this$any$iv":Ljava/lang/Iterable;
+.end local v20    # "$i$f$any":I
+.end local v21    # "it$iv":Ljava/io/BufferedReader;
+.end local v22    # "element$iv":Ljava/lang/Object;
+.end local v27    # "s":Ljava/lang/String;
     :catchall_2
     move-exception v0
 
@@ -2145,7 +2145,7 @@
     goto :goto_6
 
     .line 198
-    .end local v26    # "needles":Ljava/util/List;
+.end local v26    # "needles":Ljava/util/List;
     .restart local v1    # "needles":Ljava/util/List;
     .restart local v2    # "s":Ljava/lang/String;
     .restart local v3    # "line":Ljava/lang/String;
@@ -2172,10 +2172,10 @@
 
     const/4 v4, 0x2
 
-    .end local v1    # "needles":Ljava/util/List;
-    .end local v2    # "s":Ljava/lang/String;
-    .end local v3    # "line":Ljava/lang/String;
-    .end local v4    # "$this$any$iv":Ljava/lang/Iterable;
+.end local v1    # "needles":Ljava/util/List;
+.end local v2    # "s":Ljava/lang/String;
+.end local v3    # "line":Ljava/lang/String;
+.end local v4    # "$this$any$iv":Ljava/lang/Iterable;
     .restart local v18    # "line":Ljava/lang/String;
     .restart local v19    # "$this$any$iv":Ljava/lang/Iterable;
     .restart local v26    # "needles":Ljava/util/List;
@@ -2183,15 +2183,15 @@
     move/from16 v19, v3
 
     .line 139
-    .end local v19    # "$this$any$iv":Ljava/lang/Iterable;
-    .end local v20    # "$i$f$any":I
+.end local v19    # "$this$any$iv":Ljava/lang/Iterable;
+.end local v20    # "$i$f$any":I
     :goto_3
     nop
 
     .line 195
-    .end local v17    # "$i$a$-any-AntiDebug$mapsContainFrida$1$1":I
-    .end local v18    # "line":Ljava/lang/String;
-    .end local v27    # "s":Ljava/lang/String;
+.end local v17    # "$i$a$-any-AntiDebug$mapsContainFrida$1$1":I
+.end local v18    # "line":Ljava/lang/String;
+.end local v27    # "s":Ljava/lang/String;
     if-eqz v19, :cond_4
 
     const/16 v16, 0x1
@@ -2210,14 +2210,14 @@
     goto/16 :goto_1
 
     .line 193
-    .end local v9    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
-    .end local v10    # "seq":Lkotlin/sequences/Sequence;
-    .end local v11    # "$i$a$-useLines$default-AntiDebug$mapsContainFrida$1":I
-    .end local v12    # "$this$any$iv":Lkotlin/sequences/Sequence;
-    .end local v13    # "$i$f$any":I
-    .end local v15    # "element$iv":Ljava/lang/Object;
-    .end local v21    # "it$iv":Ljava/io/BufferedReader;
-    .end local v26    # "needles":Ljava/util/List;
+.end local v9    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
+.end local v10    # "seq":Lkotlin/sequences/Sequence;
+.end local v11    # "$i$a$-useLines$default-AntiDebug$mapsContainFrida$1":I
+.end local v12    # "$this$any$iv":Lkotlin/sequences/Sequence;
+.end local v13    # "$i$f$any":I
+.end local v15    # "element$iv":Ljava/lang/Object;
+.end local v21    # "it$iv":Ljava/io/BufferedReader;
+.end local v26    # "needles":Ljava/util/List;
     .restart local v1    # "needles":Ljava/util/List;
     :catchall_4
     move-exception v0
@@ -2242,23 +2242,23 @@
 
     move v3, v2
 
-    .end local v0    # "it$iv":Ljava/io/BufferedReader;
-    .end local v1    # "needles":Ljava/util/List;
+.end local v0    # "it$iv":Ljava/io/BufferedReader;
+.end local v1    # "needles":Ljava/util/List;
     .restart local v21    # "it$iv":Ljava/io/BufferedReader;
     .restart local v26    # "needles":Ljava/util/List;
     move/from16 v16, v3
 
     .line 137
-    .end local v12    # "$this$any$iv":Lkotlin/sequences/Sequence;
-    .end local v13    # "$i$f$any":I
+.end local v12    # "$this$any$iv":Lkotlin/sequences/Sequence;
+.end local v13    # "$i$f$any":I
     :goto_4
     nop
 
     .line 193
-    .end local v9    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
-    .end local v10    # "seq":Lkotlin/sequences/Sequence;
-    .end local v11    # "$i$a$-useLines$default-AntiDebug$mapsContainFrida$1":I
-    .end local v21    # "it$iv":Ljava/io/BufferedReader;
+.end local v9    # "$i$a$-use-FilesKt__FileReadWriteKt$useLines$1$iv":I
+.end local v10    # "seq":Lkotlin/sequences/Sequence;
+.end local v11    # "$i$a$-useLines$default-AntiDebug$mapsContainFrida$1":I
+.end local v21    # "it$iv":Ljava/io/BufferedReader;
     const/4 v0, 0x0
 
     :try_start_9
@@ -2268,12 +2268,12 @@
 
     move/from16 v2, v16
 
-    .end local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
-    .end local v6    # "charset$iv":Ljava/nio/charset/Charset;
-    .end local v7    # "$i$f$useLines":I
+.end local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
+.end local v6    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v7    # "$i$f$useLines":I
     goto :goto_8
 
-    .end local v26    # "needles":Ljava/util/List;
+.end local v26    # "needles":Ljava/util/List;
     .restart local v1    # "needles":Ljava/util/List;
     .restart local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
     .restart local v6    # "charset$iv":Ljava/nio/charset/Charset;
@@ -2288,10 +2288,10 @@
     :goto_5
     move-object v1, v0
 
-    .end local v1    # "needles":Ljava/util/List;
-    .end local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
-    .end local v6    # "charset$iv":Ljava/nio/charset/Charset;
-    .end local v7    # "$i$f$useLines":I
+.end local v1    # "needles":Ljava/util/List;
+.end local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
+.end local v6    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v7    # "$i$f$useLines":I
     :goto_6
     :try_start_a
     throw v1
@@ -2310,22 +2310,22 @@
     :try_start_b
     invoke-static {v8, v1}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
-    .end local v26    # "needles":Ljava/util/List;
+.end local v26    # "needles":Ljava/util/List;
     throw v2
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_7
 
     .line 142
-    .end local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
-    .end local v6    # "charset$iv":Ljava/nio/charset/Charset;
-    .end local v7    # "$i$f$useLines":I
+.end local v5    # "$this$useLines_u24default$iv":Ljava/io/File;
+.end local v6    # "charset$iv":Ljava/nio/charset/Charset;
+.end local v7    # "$i$f$useLines":I
     .restart local v26    # "needles":Ljava/util/List;
     :catchall_7
     move-exception v0
 
     goto :goto_7
 
-    .end local v26    # "needles":Ljava/util/List;
+.end local v26    # "needles":Ljava/util/List;
     .restart local v1    # "needles":Ljava/util/List;
     :catchall_8
     move-exception v0
@@ -2334,7 +2334,7 @@
 
     move v3, v2
 
-    .end local v1    # "needles":Ljava/util/List;
+.end local v1    # "needles":Ljava/util/List;
     .restart local v26    # "needles":Ljava/util/List;
     :goto_7
     move v2, v3
@@ -2445,7 +2445,7 @@
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .end local v0    # "r":Lcom/gaba/eskukap/security/AntiDebug$Result;
+.end local v0    # "r":Lcom/gaba/eskukap/security/AntiDebug$Result;
     goto :goto_0
 
     .line 54
@@ -2758,8 +2758,8 @@
     .local v3, "$i$a$-apply-AntiDebug$startWatchdog$2":I
     invoke-virtual {v1, v2}, Ljava/lang/Thread;->setDaemon(Z)V
 
-    .end local v1    # "$this$startWatchdog_u24lambda_u241":Ljava/lang/Thread;
-    .end local v3    # "$i$a$-apply-AntiDebug$startWatchdog$2":I
+.end local v1    # "$this$startWatchdog_u24lambda_u241":Ljava/lang/Thread;
+.end local v3    # "$i$a$-apply-AntiDebug$startWatchdog$2":I
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     .line 56
