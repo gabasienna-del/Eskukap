@@ -1,0 +1,6 @@
+.method private static final activateByToken$lambda$11(Lcom/gaba/eskukap/ui/MainActivity;Ljava/lang/String;)V
+    .locals 1
+
+    const/4 v0, 0x1
+    return-void
+.end method

@@ -1,0 +1,130 @@
+<manifest compileSdkVersionCodename="14" package="com.gaba.eskukap" platformBuildVersionName="14" compileSdkVersion="34" versionName="1.0" platformBuildVersionCode="34" versionCode="1">
+<uses-sdk minSdkVersion="24" targetSdkVersion="34">
+</uses-sdk>
+<uses-permission name="android.permission.INTERNET">
+</uses-permission>
+<uses-permission name="android.permission.ACCESS_FINE_LOCATION">
+</uses-permission>
+<uses-permission name="android.permission.ACCESS_COARSE_LOCATION">
+</uses-permission>
+<uses-permission name="android.permission.WAKE_LOCK">
+</uses-permission>
+<uses-permission name="android.permission.ACCESS_NETWORK_STATE">
+</uses-permission>
+<uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED">
+</uses-permission>
+<uses-permission name="android.permission.FOREGROUND_SERVICE">
+</uses-permission>
+<permission name="com.gaba.eskukap.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" protectionLevel="2">
+</permission>
+<uses-permission name="com.gaba.eskukap.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION">
+</uses-permission>
+<application usesCleartextTraffic="true" supportsRtl="true" appComponentFactory="androidx.core.app.CoreComponentFactory" allowBackup="false" extractNativeLibs="false" debuggable="true" icon="resource_id:0x7f0d0000" theme="resource_id:0x7f110227" label="Alpha v1">
+<activity exported="true" name="com.gaba.eskukap.ui.MainActivity">
+<intent-filter>
+<action name="android.intent.action.MAIN">
+</action>
+<category name="android.intent.category.LAUNCHER">
+</category>
+</intent-filter>
+</activity>
+<provider exported="true" grantUriPermissions="true" name="com.gaba.eskukap.provider.FakePhotoProvider" authorities="com.gaba.eskukap.provider">
+</provider>
+<meta-data name="xposedmodule" value="true">
+</meta-data>
+<meta-data name="xposeddescription" value="Photo bytes swap via LSPosed. V1.02">
+</meta-data>
+<meta-data name="xposedminversion" value="82">
+</meta-data>
+<provider exported="false" name="androidx.startup.InitializationProvider" authorities="com.gaba.eskukap.androidx-startup">
+<meta-data name="androidx.work.WorkManagerInitializer" value="androidx.startup">
+</meta-data>
+<meta-data name="androidx.emoji2.text.EmojiCompatInitializer" value="androidx.startup">
+</meta-data>
+<meta-data name="androidx.lifecycle.ProcessLifecycleInitializer" value="androidx.startup">
+</meta-data>
+<meta-data name="androidx.profileinstaller.ProfileInstallerInitializer" value="androidx.startup">
+</meta-data>
+</provider>
+<service exported="false" name="androidx.work.impl.background.systemalarm.SystemAlarmService" enabled="resource_id:0x7f040002" directBootAware="false">
+</service>
+<service exported="true" name="androidx.work.impl.background.systemjob.SystemJobService" permission="android.permission.BIND_JOB_SERVICE" enabled="resource_id:0x7f040004" directBootAware="false">
+</service>
+<service exported="false" name="androidx.work.impl.foreground.SystemForegroundService" enabled="resource_id:0x7f040003" directBootAware="false">
+</service>
+<receiver exported="false" name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" enabled="true" directBootAware="false">
+</receiver>
+<receiver exported="false" name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" enabled="false" directBootAware="false">
+<intent-filter>
+<action name="android.intent.action.ACTION_POWER_CONNECTED">
+</action>
+<action name="android.intent.action.ACTION_POWER_DISCONNECTED">
+</action>
+</intent-filter>
+</receiver>
+<receiver exported="false" name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" enabled="false" directBootAware="false">
+<intent-filter>
+<action name="android.intent.action.BATTERY_OKAY">
+</action>
+<action name="android.intent.action.BATTERY_LOW">
+</action>
+</intent-filter>
+</receiver>
+<receiver exported="false" name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" enabled="false" directBootAware="false">
+<intent-filter>
+<action name="android.intent.action.DEVICE_STORAGE_LOW">
+</action>
+<action name="android.intent.action.DEVICE_STORAGE_OK">
+</action>
+</intent-filter>
+</receiver>
+<receiver exported="false" name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" enabled="false" directBootAware="false">
+<intent-filter>
+<action name="android.net.conn.CONNECTIVITY_CHANGE">
+</action>
+</intent-filter>
+</receiver>
+<receiver exported="false" name="androidx.work.impl.background.systemalarm.RescheduleReceiver" enabled="false" directBootAware="false">
+<intent-filter>
+<action name="android.intent.action.BOOT_COMPLETED">
+</action>
+<action name="android.intent.action.TIME_SET">
+</action>
+<action name="android.intent.action.TIMEZONE_CHANGED">
+</action>
+</intent-filter>
+</receiver>
+<receiver exported="false" name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" enabled="resource_id:0x7f040002" directBootAware="false">
+<intent-filter>
+<action name="androidx.work.impl.background.systemalarm.UpdateProxies">
+</action>
+</intent-filter>
+</receiver>
+<receiver exported="true" name="androidx.work.impl.diagnostics.DiagnosticsReceiver" permission="android.permission.DUMP" enabled="true" directBootAware="false">
+<intent-filter>
+<action name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS">
+</action>
+</intent-filter>
+</receiver>
+<service exported="false" name="androidx.room.MultiInstanceInvalidationService" directBootAware="true">
+</service>
+<receiver exported="true" name="androidx.profileinstaller.ProfileInstallReceiver" permission="android.permission.DUMP" enabled="true" directBootAware="false">
+<intent-filter>
+<action name="androidx.profileinstaller.action.INSTALL_PROFILE">
+</action>
+</intent-filter>
+<intent-filter>
+<action name="androidx.profileinstaller.action.SKIP_FILE">
+</action>
+</intent-filter>
+<intent-filter>
+<action name="androidx.profileinstaller.action.SAVE_PROFILE">
+</action>
+</intent-filter>
+<intent-filter>
+<action name="androidx.profileinstaller.action.BENCHMARK_OPERATION">
+</action>
+</intent-filter>
+</receiver>
+</application>
+</manifest>
